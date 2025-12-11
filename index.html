@@ -2,12 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vite-project</title>
+    <title>weather app</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/app.ts"></script>
+    <main>
+        <div id="app">
+            <h1>Прогноз погоды</h1>
+            <form class="todo-form">
+                <p>
+                    <label for="todo-id">Введите город:</label>
+                    <input id="todo-id" type="text">
+                </p>
+                <button type="submit">Загрузить информацию с сервера</button>
+            </form>
+        </div>
+        <div class="result"></div>
+    </main>
+    <script src="src/app.ts" ></script>
   </body>
 </html>
